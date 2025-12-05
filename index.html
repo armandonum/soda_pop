@@ -46,10 +46,22 @@
             align-items: center;
         }
 
-        .logo i {
+        .logo-icon {
             font-size: 32px;
-            color: #2ecc71;
+            color: #FF6B6B;
             margin-right: 10px;
+            position: relative;
+        }
+
+        .logo-icon::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #FFD166;
+            border-radius: 50%;
+            top: 5px;
+            right: 5px;
         }
 
         .logo-text {
@@ -59,7 +71,7 @@
         }
 
         .logo-text span {
-            color: #2ecc71;
+            color: #e34a02;
         }
 
         nav ul {
@@ -81,7 +93,7 @@
         }
 
         nav ul li a:hover {
-            color: #2ecc71;
+            color: #e34a02;
         }
 
         nav ul li a::after {
@@ -89,7 +101,7 @@
             position: absolute;
             width: 0;
             height: 2px;
-            background: #2ecc71;
+            background: #e34a02;
             left: 0;
             bottom: -5px;
             transition: width 0.3s;
@@ -142,7 +154,7 @@
         }
 
         h1 span {
-            color: #2ecc71;
+            color: #e34a02;
         }
 
         .subtitle {
@@ -161,7 +173,7 @@
 
         .btn {
             display: inline-block;
-            background-color: #2ecc71;
+            background-color: #e34a02;
             color: white;
             padding: 15px 30px;
             border-radius: 50px;
@@ -212,7 +224,7 @@
         }
 
         .section-title span {
-            color: #2ecc71;
+            color: #e34a02;
         }
 
         .features-grid {
@@ -236,7 +248,7 @@
 
         .feature-icon {
             font-size: 40px;
-            color: #2ecc71;
+            color: #e34a02;
             margin-bottom: 20px;
         }
 
@@ -278,7 +290,7 @@
         }
 
         .tab.active {
-            color: #2ecc71;
+            color: #e34a02;
         }
 
         .tab.active::after {
@@ -288,11 +300,11 @@
             left: 0;
             width: 100%;
             height: 3px;
-            background-color: #2ecc71;
+            background-color: #e34a02;
         }
 
         .tab:hover {
-            color: #2ecc71;
+            color: #e34a02;
         }
 
         .tab-content {
@@ -388,7 +400,7 @@
         .form-group input:focus,
         .form-group select:focus,
         .form-group textarea:focus {
-            border-color: #2ecc71;
+            border-color: #e34a02;
             outline: none;
         }
 
@@ -430,7 +442,7 @@
         }
 
         .city-option.selected {
-            background-color: #2ecc71;
+            background-color: #e34a02;
             color: white;
         }
 
@@ -457,7 +469,7 @@
         .footer-column h3 {
             font-size: 20px;
             margin-bottom: 20px;
-            color: #2ecc71;
+            color: #e34a02;
         }
 
         .footer-column ul {
@@ -475,7 +487,7 @@
         }
 
         .footer-column ul li a:hover {
-            color: #2ecc71;
+            color: #e34a02;
         }
 
         .copyright {
@@ -569,9 +581,11 @@
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <div class="logo">
-                <i class="fas fa-leaf"></i>
-                <div class="logo-text">Soda<span>Pop</span></div>
+             <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-wine-glass-alt"></i>
+                </div>
+                <div class="logo-text">Natural<span>Juice</span></div>
             </div>
             <nav>
                 <ul>
@@ -777,22 +791,22 @@
                     <h3 style="color: #2c3e50; margin-bottom: 20px;">Información de Pedidos</h3>
 
                     <div class="feature" style="text-align: left; margin-bottom: 20px;">
-                        <h3><i class="fas fa-truck" style="color: #2ecc71; margin-right: 10px;"></i> Envíos a Todo Bolivia</h3>
+                        <h3><i class="fas fa-truck" style="color: #e34a02; margin-right: 10px;"></i> Envíos a Todo Bolivia</h3>
                         <p>Realizamos entregas en todas las ciudades y áreas urbanas de Bolivia. Los pedidos en ciudades principales tienen entrega en 24-48 horas.</p>
                     </div>
 
                     <div class="feature" style="text-align: left; margin-bottom: 20px;">
-                        <h3><i class="fas fa-boxes" style="color: #2ecc71; margin-right: 10px;"></i> Pedidos al por Mayor</h3>
+                        <h3><i class="fas fa-boxes" style="color: #e34a02; margin-right: 10px;"></i> Pedidos al por Mayor</h3>
                         <p>Ofrecemos descuentos especiales para restaurantes, gimnasios, oficinas y distribuidores. Contáctanos para precios por volumen.</p>
                     </div>
 
                     <div class="feature" style="text-align: left; margin-bottom: 20px;">
-                        <h3><i class="fas fa-percentage" style="color: #2ecc71; margin-right: 10px;"></i> Precios Especiales</h3>
+                        <h3><i class="fas fa-percentage" style="color: #e34a02; margin-right: 10px;"></i> Precios Especiales</h3>
                         <p>Descuentos del 15% en pedidos mayores a 10 unidades y 25% en pedidos mayores a 50 unidades. Precios especiales para empresas.</p>
                     </div>
 
                     <div class="feature" style="text-align: left;">
-                        <h3><i class="fas fa-shield-alt" style="color: #2ecc71; margin-right: 10px;"></i> Garantía de Frescura</h3>
+                        <h3><i class="fas fa-shield-alt" style="color: #e34a02; margin-right: 10px;"></i> Garantía de Frescura</h3>
                         <p>Todos nuestros productos son elaborados el mismo día del envío y llegan refrigerados para garantizar máxima frescura y calidad.</p>
                     </div>
                 </div>
@@ -838,7 +852,7 @@
     <div id="confirmationModal" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
-            <h3 style="color: #2ecc71; margin-bottom: 20px;">¡Pedido Realizado con Éxito!</h3>
+            <h3 style="color: #e34a02; margin-bottom: 20px;">¡Pedido Realizado con Éxito!</h3>
             <p id="confirmationMessage" style="margin-bottom: 20px;"></p>
             <p>Nos pondremos en contacto contigo en las próximas 24 horas para confirmar los detalles de tu pedido y coordinar la entrega.</p>
             <p style="margin-top: 20px; font-weight: 600;">¡Gracias por elegir Soda Pop!</p>
